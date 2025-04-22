@@ -2,14 +2,14 @@
 const questions = [
     {
         question: "Which of the following is true of a particle in stable equilibrium?",
-        options: ["Potential energy is constant", "Potential energy is maximum", "Potential energy is minimim", "Potential energy is zero"],
+        options: ["Potential energy is constant", "Potential energy is maximum", "Potential energy is minimum", "Potential energy is zero"],
         correctAnswer: 2,
         explanation: "When a particle at a stable equilibrium is "+
          "slightly displaced, it comes back to its original position. The potential energy is minimum"
     },
     {
-        question: "Frictional force is am advantage in which of the following situations ?",
-        options: ["Stopping a car suddenly", "Holdimg an object firmly", "Sliding down a slide", "Walking on a slippery floor"],
+        question: "Frictional force is an advantage in which of the following situations?",
+        options: ["Stopping a car suddenly", "Holding an object firmly", "Sliding down a slide", "Walking on a slippery floor"],
         correctAnswer: 1,
         explanation: "Friction helps to keep an object in place making it easier to hold on."
     },
@@ -21,7 +21,7 @@ const questions = [
     },
     {
         question: "Pascal's law of pressure transmissibility is applicable to which of these devices? ",
-        options: ["Hydraulic lift", "Siphom", "Hydrometer", "Hygrometer"],
+        options: ["Hydraulic lift", "Siphon", "Hydrometer", "Hygrometer"],
         correctAnswer: 0,
         explanation: " "
     },
@@ -29,7 +29,7 @@ const questions = [
         question: "Mercury is used as a thermometric substance because\u000A" +
         "I. its specific heat capacity is low.\u000A" +
         "II. does not wet glass. \u000A III. It is opaque.",
-        options: ["I only", "I amd II only", "II and III only", "I, II and III"],
+        options: ["I only", "I and II only", "II and III only", "I, II and III"],
         correctAnswer: 3,
         explanation: " "
     },
@@ -37,7 +37,7 @@ const questions = [
         question: "What is the maximum wavelength in an open organ pipe of length in an open organ pipe of length a cm?",
         options: ["a cm", "2a cm", "3a cm", "4a cm"],
         correctAnswer: 1,
-        explanation: "The maximum possible wavelength will correspond to the minimum ppssible frequemcy which is the fumdamental frequncy. "+
+        explanation: "The maximum possible wavelength will correspond to the minimum possible frequency which is the fundamental frequncy. "+
         "l=a=wavelenth/2; wavelength=2a"
     },
     {
@@ -49,7 +49,7 @@ const questions = [
     {
         question: "Which of these thermometers uses the volume of a fixed mass of liquid as its thermometric property?",
         options: ["mercury-in glass thermometer", 
-        "thermocouple thermometer", "comstant volume of glass thermometer", 
+        "thermocouple thermometer", "constant volume of glass thermometer", 
         "resistance thermometer"],
         correctAnswer: 0,
         explanation: " "
@@ -61,7 +61,7 @@ const questions = [
         explanation: "2023, 30"
     },
     {
-        question: "In a simple machine, the variatiom of tbe efficiency with load is",
+        question: "In a simple machine, the variation of the efficiency with load is",
         options: ["a parabola", "a straight line", "a hyperbola", "logarithmic"],
         correctAnswer: 0,
         explanation: " "
@@ -73,7 +73,7 @@ const questions = [
         explanation: " "
     }, 
  {
-        question: "A machine has a velocity ratio 8 and efficiency 80%. What is its mechamical advantage?",
+        question: "A machine has a velocity ratio 8 and efficiency 80%. What is its mechanical advantage?",
         options: ["8", "10", "6.4", "2.5"],
         correctAnswer: 2,
         explanation: "efficiency= M.A\u2044V.R* 100% "
@@ -91,7 +91,7 @@ const questions = [
         explanation: " "
     },
 {
-        question: "Which of thw following has no effect on the sensitivity of a galvanometer?",
+        question: "Which of the following has no effect on the sensitivity of a galvanometer?",
         options: ["The number of turns in the coil", "The strength of the magnetic field", "Gaps between the coils", "The area of the coil"],
         correctAnswer: 2,
         explanation: " "
@@ -112,7 +112,7 @@ const questions = [
         question: "The mass of an object discharged at the cathode is 15g. If the current passed through is 3A, the time is [e.c.e=3.3 \u00D7 10\u207B \u2077 kgC\u207B \u00B9]",
         options: ["996 min", "225 min", "253 min", "455 min"],
         correctAnswer: 2,
-        explanation: "m=zi"
+        explanation: "m=zit"
 },
 {
     question: "The use of lenses is not applicable in the",
@@ -134,7 +134,7 @@ const questions = [
     explanation: ""
 },
 {
-    question:"Which of the following electrical instruments or machines does not rely on the magmetic effect of current for its working?",
+    question:"Which of the following electrical instruments or machines does not rely on the magnetic effect of current for its working?",
     options: ["Carbon microphone", "Telephone receiver", "Moving-coil galvanometer", "Dynamo"],
     correctAnswer: 0,
     explanation: " Carbon microphone is a type of microphone or transducer that converts sound energy to electrical audio signals. It uses a carbon granules or particles."
@@ -147,7 +147,7 @@ const questions = [
     explanation: ""
 }, 
 {
-    question:"The specific latent heat of steam is 2300J/g and tje specific heat capacity of water is 4.2J/gk. When 2g of steam at 100\u2070C condenses to 40\u2070C, the heat given up is",
+    question:"The specific latent heat of steam is 2300J/g and the specific heat capacity of water is 4.2J/gk. When 2g of steam at 100\u2070C condenses to 40\u2070C, the heat given up is",
     options: ["5104J", "4936J", "4636J", "4684J"],
     correctAnswer:0 ,
     explanation: ""
@@ -171,7 +171,7 @@ const questions = [
     explanation: "2022,9"
 },
 {
-    question:"A man of mass 77kg stands on a sprimg-weighing machine inside a lift. When the lift starts to ascend, its accelaration is 2m/s\u00B2. What will be the reading on the machine?",
+    question:"A man of mass 77kg stands on a spring-weighing machine inside a lift. When the lift starts to ascend, its accelaration is 2m/s\u00B2. What will be the reading on the machine?",
     options: ["770N", "924N", "154N", "616N"],
     correctAnswer: 1,
     explanation: "R=mg+ma"
@@ -277,12 +277,19 @@ function showQuestion(index) {
         optionItem.appendChild(radioInput);
         optionItem.appendChild(checkmark);
         optionItem.appendChild(optionLabel);
+
+    //Add multiple event types for better compatibility
+    const handleSelection = () =>{
+        radioInput.checked=true;
+        userAnswers[index]=optionIndex;
+        updateNavigationButtons();
+
+    };
         
-        radioInput.addEventListener('change', () => {
-            userAnswers[index] = optionIndex;
-            updateNavigationButtons();
-        });
-        
+        radioInput.addEventListener('change', handleSelection);
+        radioInput.addEventListener('click', handleSelection);
+        optionItem.addEventListener('click', handleSelection);
+
         elements.optionsPanel.appendChild(optionItem);
     });
     
@@ -299,7 +306,7 @@ function updateNavigationButtons() {
         // Mark answered questions
         if (userAnswers[index] !== null) {
             button.classList.add('answered');
-            button.innerHTML = `${index + 1} <span class="check-icon">✓</span>`;
+      
         }
         
         // Highlight current question
